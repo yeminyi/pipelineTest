@@ -46,11 +46,11 @@
     </ItemGroup>
     <Copy
     SourceFiles="@(_CopyItems)"
-    DestinationFolder="bin\Release\netcoreapp3.1\publish\ClientApp\dist"
+    DestinationFolder="ClientApp\dist"
     />
 
     <ItemGroup>
-      <DistFiles Include="bin\Release\netcoreapp3.1\publish\ClientApp\dist\**;" />
+      <DistFiles Include="ClientApp\dist\**;" />
       <ResolvedFileToPublish Include="@(DistFiles->'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
         <RelativePath>%(DistFiles.Identity)</RelativePath>
         <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
