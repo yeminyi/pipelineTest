@@ -205,7 +205,7 @@ steps:
 
 
 ```
-## An Problem 
+## A Problem 
 the DotNetCoreCLI@2 task not publish (zip) the project?
 Aways ignore it ,if `publishWebProjects` to `True`.
 Just update it to `False`
